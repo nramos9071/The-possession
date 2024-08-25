@@ -13,214 +13,152 @@
     </header>
 
     <body>
-        <div>
-            <section class="opening">
-                <P>You awake with a terrible headache. You try to move your hand towards your forehead to rub it but your arm is stuck. That is when you realize that your whole
-                    body it stuck. You open your eyes to see what is happening when you see that your whole body is suspended in the air. You are chained, hanging from the ceiling of 
-                    a cave. You look down and see that your legs are also chained to the floor. 
+        <div class="container">
+            <section id="opening">
+                <P>
+                    The following takes place during a recent long rest and you are passing Wandell in the corridor of the Fred's Fish Fry. 
+                    Everyone else seems to be asleep. You and Wandell are the only ones still awake...
                 </P>
             </section>
-            <section class="ans1">
-                <p>What do you do?</p>
-                <label for="stay">Stay where you are. Its not comfortable but its better than being dead. </label>
-                    <input type="checkbox" id="stay"/>
-                <label for="go">Try to free yourself.</label>    
-                    <input type="checkbox" id="go"/>
+            <section class="container" id="firstprompt" style="display:none">
+                <p>
+                    You are walking towards your bed to finally rest after a long day of fighting and working with the crew of the Fred's Fish Fry.
+                    You see Wandell walking towards the crew quarters. You had been meaning to talk to him. The past few days Wandell has been 
+                    a little...off. 
+                </p>
+            <section  id="ques1">
+
+                <p>
+                    what do you do?
+                </p>
+
+                <button type="button" id="CalltoWandell">Call To Wandell</button>
+                <button type="button" id="Lethimgosleep">Let him Sleep</button>
+            </section>
+               
                     
             </section>
-            <section Class="opening" style="display:none" id="stay1">
-                <p>You stay where you are to get your barrings. You look around and see a man hunched over a crystal ball. You begin to realize that you have been here before.
-                    It is the purple figure in the cave! You begin to wonder why you are dealing with him again. You look around to see what you can do. You can see what is happening
-                    on the crystal ball. You can see the party coming up with plans for the bank heist. You see the party moving through a church and attacking pastors. The images are all
-                    from a point of view.  
-                </p>
-
-                <p>You take a d4 of psychic damage and you do not replenish any of your spell slots.</p>
-            </section>
-
-            <section class="opening" style="display:none" id="go1">
-                <p>You want to move to the cave but you can't find any traction to actually move. You try swimming but that doesn't work either. In your mind you imagine moving towards
-                    the cave. As you think this, your body slowly moves towards the cave. You walk in and you see a long dug out corridor. At the end you see a bright purple light emanating.
-                    You move closer to the end of the corridor. When you reach the bright light you see a large room. On your left, you see a row of crystal balls. On your right, you see a table with 
-                    spell scrolls on them. At the end of the room you see someone at a desk crouched over a crystal ball. In the corner of the room you see a portal in the corner of the room.
-                    You think that the portal may be your ticket out of this plane of existence. 
-                </p>
-            </section>
-
-            <section class="ans1" style="display:none" id="ans2">
-                <p>What do you do?</p>
-                <label for="balls">You move to the Crystal balls to see what you can find</label>
-                    <input type="checkbox" id="balls" onclick=""/> <br/>
-                <label for="scrolls">You move towards the scrolls.</label>
-                    <input type="checkbox" id="scrolls" onclick=""/>
-                <label for="theman">You move towards the portal.</label>
-                    <input type="checkbox" id="theman" />
-
-            </section>
-
-            <section class="ans1" id="ans3" style="display:none">
-                <p>You move towards the crystal balls. You see three lined up. As you move closer to them, you begin to notice that each of them are projecting moving pictures. You
-                    begin to recognize that the picture is of yourself and your party! Each crystal ball is showing different events. Which crystal ball do you look at?
-                </p>
-
-                <label for="balls1">1</label>
-                    <input type="checkbox" id="balls1" /> <br/>
-                <label for="balls2">2</label>
-                    <input type="checkbox" id="balls2" />
-                <label for="balls3">3</label>
-                    <input type="checkbox" id="balls3" />
-            </section>
-
-            <section class="ans1" id="ballsAns1" style="display:none">
-                <p>You move to the first one on the table. You see the party at the bank. The image begins to become cloudy. Suddenly the image changes to the group opening a 
-                    vault door.  In the vault you see a mound a gold pieces and you see tables with crowns and jewels on top. You see multiple chests along the walls of the vault. 
-                    on the ground you see a spell glyph written on the ground but you can't make out what kind of glyph it is. </p>
-            </section>
-
-            <section class="ans1" id="ballsAns2" style="display:none">
-                <p> You move to the middle one on the table. You walk towards a vault deep in a cave. You move forward and are walking down a stone corridor with doors on either side. 
-                    You reach the end of the door and open it. You a see a gnome sitting a table. You see a furnance on one side and you see a table and chairs on the other. 
-                    You see 2 dragonborns and a human standing next to each other. They appear to be dead but still animated. You move deeper into the room. Behind you, you hear something fall 
-                    to the ground. </p>
-
-            </section>
-
-            <section class="ans1" id="ballsAns3" style="display:none">
-                <p>You move towards the last one on the table. You see yourself standing in front of a bright light. The rest of the party is in front of you. In your hands is a ring.
-                    This ring emenates with power. A power you have not yet wielded. You're given a choice. You're unsure of what you want to do. </p>
-                
-            </section>
-
-            <section class="ans1" id="end1" style="display:none">
-                <p>Before you can finish watching the events unfold in front of you, you are pulled away. You see a figure cloaked in purple surrounded by a purple mist. "How did you get in here?"
-                    the Figure asks. He looks down and sees the knife you stole from Wandell. "ohhh...I see. That's a special knife right there. Make sure you put it to good use..." and at that, you wake
-                    up next to Olga. Her belly has for sure grown larger from when you last saw it. You wake up from a good long rest. 
-                </p>
-                
-            </section>
-
-            <section class="ans1" id="scrollIntro" style="display:none">
-                <p>You move towards the scrolls. Before you are a wide range of scrolls. All of them have glyphs and instructions on how to perform
-                    a spell. You don't know what spells are in front of you. The figure hunched over the crystal ball seems to have noticed that you 
-                    are in the room. You only have enough time to grab one scroll. 
-                </p>
-                <p>Roll a d20 and add your Sleight of Hand modifier. Select the roll you had. (click on the box above your answer.)</p>
-                
-                        <input id="nat1" type="checkbox">Natural 1</input>
-                        <input id="poor" type="checkbox">2-10</input>
-                        <input id="decent" type="checkbox">11-15</input>
-                        <input id="good" type="checkbox">16-20</input>
-                        <input id="great" type="checkbox">21-24</input>
-                        <input id="nat20" type="checkbox">25+</input>
-            </section>
-            
-            <section class="ans1">
-            
-                <p id="nat1Ans" style="display:none">You take a "Find Traps" Scroll.</p>
-                <p id="poorAns" style="display:none">You take a "Fire Bolt" Scroll.</p>
-                <p id="decentAns" style="display:none">You take a "Disguise Self" Scroll.</p>
-                <p id="goodAns" style="display:none">You take a "Misty Step" Scroll.</p>
-                <p id="greatAns" style="display:none">You take a "Fire Ball" Scroll.</p>
-                <p id="nat20Ans" style="display:none">You take a "Power Word Kill" Scroll.</p>
-            </section>
-
-            <section class="ans1" id="end2" style="display:none">
-                <p>The figure begins to move towards you. You reach out to grab a scroll. As you grab a school you are grabbed by the figure. 
-                    "What are you doing here?", the figure asks. He seems to look through you and sees that you hold the Wandell's dagger. "Oh. 
-                    I see you. You were drawn to your patron. Be gone. I need you in the physical realm. I need you to do what is needed..." Before
-                    you can realize it, you are thrown back into your bed. Olga fast asleep. She looks even more pregnant than what she did the night before. 
-                    You are awoken well rested...with the scroll in your hand.
-                </p>
-            </section>
-
-            <section class="ans1" id="manIntro" style="display:none">
-                <p>You move towards the portal. The figure seems to be focused on the crystal ball. You try to move stealthly
-                </p>
-                <p>Roll a d20 and add your Stealth modifier. Select the roll you had. (Click the box above your answer)</p>
-                <input id="sneaknat1" type="checkbox">Natural 1</input>
-                <input id="sneakpoor" type="checkbox">2-10</input>
-                <input id="sneakdecent" type="checkbox">11-15</input>
-                <input id="sneakgood" type="checkbox">16-20</input>
-                <input id="sneakgreat" type="checkbox">21-24</input>
-                <input id="sneaknat20" type="checkbox">25+</input>
-                
-            </section>
-
-            <section class="ans1" id="stealthAns">
-                <p id="sneaknat1Ans" style="display:none">You move towards the portal. As you make it to the portal, you drip and fall to the ground.
-                    you hope that the figure did not hear you. He seems to still look at the portal. As you get up to move back towards the portal
-                    you feel an electric shock go through your body. The Figure stands up and move towards you. He lifts his hand and you move with his hand.
-                    The Figure brings you closer. "The Dagger brought you to me. But that Knife does not belong to you." He reaches out and grabs the knife from
-                    your person. He places it in his belt and he shoos you away. When he waves his hand, you're thrust towards the portal. You hurdle through the 
-                    portal. The speed at which you move through the portal feels like you are going to be torn apart. You awake next to Olga.
-                    Her belly seems to have grown even more than before. You awake tired. You do not replenish your spell slots and you take d4
-                    psychic damage.
-                </p>
-
-                <p id="sneakpoorAns" style="display:none">You move towards the portal. You move slowly and softly. It seems like you'll make it to the portal
-                    without being noticed. The figure seems to still look at the crystal ball in front of him. As you move towards the portal
-                    you feel an electric shock go through your body. The Figure stands up and move towards you. He lifts his hand and you move with his hand.
-                    The Figure brings you closer. "The Dagger brought you to me. But that Knife does not belong to you." He reaches out and grabs the knife from
-                    your person. He places it in his belt and he shoos you away. When he waves his hand, you're thrust towards the portal. You hurdle through the 
-                    portal. The speed at which you move through the portal feels like you are going to be torn apart. You awake next to Olga.
-                    Her belly seems to have grown even more than before. You awake tired. You do not replenish your spell slots.
-                </p>
-
-                <p id="sneakdecentAns" style="display:none">You move towards the portal. You move slowly and softly. The figure seems focused on the 
-                    crystal ball. You move towards the portal and are able to get through before the Figure notices that you were even there. You awake next to
-                    Olga. Her stomach has grown bigger since you went to bad last night. You awake from your long rest completely rested.
-                </p>
-
-                <p id="sneakgoodAns" style="display:none">You move towards the portal. You move slowly and softly. The Figure seems focused on the crystal
-                    ball. Before you make it to the portal you hear, "You would leave your patron without saying 'hello'?" The Figure stands. You turn towards him. 
-                    He stands in front of you. Taller than you remembered. "I've been trying to figure out how you got here." He looks at you deeply. "I see...Very
-                    clever. You stole the dagger from your friend. I gave it to him as a gift. The Dagger must have brought you to me. " The Dagger flies out 
-                    from your bag. He looks at it closely. "You know. This Dagger is a direct line to me. I thought your friend would have used it by now. But I guess it is 
-                    fitting for you to have it." He hands the dagger back to you. "I shall see you soon..." He turns back to his desk and watches his crystal ball.
-                    You move towards the portal. You are instantly thrown back to your bed. Olga's stomach has noticably grown since you went to bed. You go back to 
-                    sleep and are well rested.
-                </p>
-
-                <p id="sneakgreatAns" style="display:none">You move towards the portal. You move slowly and softly. The Figure seems focused on the crystal
-                    ball. Before you make it to the portal you hear, "You would leave your patron without saying 'hello'?" The Figure stands. You turn towards him. 
-                    He stands in front of you. Taller than you remembered. "I've been trying to figure out how you got here." He looks at you deeply. "I see...Very
-                    clever. You stole the dagger from your friend. I gave it to him as a gift. The Dagger must have brought you to me. " The Dagger flies out 
-                    from your bag. He looks at it closely. "You know. This Dagger is a direct line to me. I thought your friend would have used it by now. But I guess it is 
-                    fitting for you to have it." He hands the dagger back to you. "I shall see you soon...Oh and be careful going through that bank. There is more
-                    to the bank than you have seen." He turns back to his desk and watches his crystal ball. You move towards the portal. You are instantly thrown back to your bed. Olga's stomach has noticably grown since you went to bed. You go back to 
-                    sleep and are well rested.
-                </p>
-
-                <p id="sneaknat20Ans" style="display:none">You move towards the portal. You move slowly and softly. The Figure seems focused on the crystal
-                    ball. Before you make it to the portal you hear, "You would leave your patron without saying 'hello'?" The Figure stands. You turn towards him. 
-                    He stands in front of you. Taller than you remembered. "I've been trying to figure out how you got here." He looks at you deeply. "I see...Very
-                    clever. You stole the dagger from your friend. I gave it to him as a gift. The Dagger must have brought you to me. " The Dagger flies out 
-                    from your bag. He looks at it closely. "You know. This Dagger is a direct line to me. I thought your friend would have used it by now. But I guess it is 
-                    fitting for you to have it." He hands the dagger back to you. "I shall see you soon...Oh and be careful going through that bank. There is more
-                    to the bank than you have seen." He turns back to his desk and watches his crystal ball. You move towards the portal. You are instantly thrown back to your bed. 
-                    Olga's stomach seems to have shrunk since last night. You feel a sense of relief. You feel like maybe your patron did you a favor. You go back to 
-                    sleep and are well rested.
-                </p>
-
-
-
-            </section>
- 
-
-
-      
-
-               
-
-                
-          
-            </section>
-
-            
-        </div>
 
         </div>
 
+        <div class="container">
+            <section class="container" style="display:none" id="call">
+                <p>
+                    You call to Wandell but he doesn't turn around. Instead of walking to the crew quarters, he walks to the cargo bay.
+                </p>
+            </section>
+
+            <section class="container" id="choice1" style="display:none">            
+
+                <p>what do you do?</p>
+
+                <button type="button" id="Stealth">Try to stealthly see what he is doing</button>
+                <button type="button" id="walkin">Barge in on Wandell</button>
+                <button type="button" id="Nothing">You do nothing. And you go to your room</button>
+
+            </section>
+
+            <section class="container" style="display:none" id="Stealthans">
+                <p>
+                    Roll Stealth...
+                </p>
+                <button type="button" id="Nat1">Nat1</button>
+                <button type="button" id="bad">2-11</button>
+                <button type="button" id="good">12-19</button>
+                <button type="button" id="Nat20">Nat20</button>
+            </section>
+
+            <section class="container" id="barge" style="display:none">
+                <p>
+                    You Barge into the cargo hold. And you see Wandell.
+                    <br/>
+                    <br/>
+                    Roll perception, insight, investigation, or arcana...
+                </p>
+
+                <button type="button" id="Nat1one">Nat1</button>
+                <button type="button" id="badtwo">2-11</button>
+                <button type="button" id="goodthree">12-19</button>
+                <button type="button" id="Nat20four">Nat20</button>
+
+
+            </section>
+
+            <section class="container" id="nat1ans" style="display:none">
+                <p>
+                    You walk into the cargo hold. Wandell seems to be doing something extremely strange. He is looking straight at the wall of 
+                    the cargo hold. A purple aura surrounds Wandell. You slowly walk to be in front of him. Before you can get in front of him
+                    you are suddenly in bed with Xadalli. Your ass hurts again...
+                    <br/>
+                    <br/>
+                    You took a long rest but you also take 1d4 bludgeoning damage.
+                </p>
+
+
+            </section>
+
+            <section class="container" id="badans" style="display:none">
+                <p>
+                    You walk into the cargo hold. Wandell seems to be doing something extremely strange. He is looking straight at the wall of 
+                    the cargo hold. A purple aura surrounds Wandell. You slowly walk to be in front of him. You get in front of him and you 
+                    see that his eyes are rolled back and seems to be suffering. You reachout to him but before you can touch him you are suddenly
+                    in your bed with Olga next to you. She seems to have a satisfied grin on her face.
+                </p>
+
+            </section>
+
+            <section class="container" class="ans1" style="display:none" id="goodAns">
+
+                <p>
+                    You walk into the cargo hold. Wandell seems to be doing something extremely strange. He is looking straight at the wall of 
+                    the cargo hold. A purple aura surrounds Wandell. You slowly walk to be in front of him. You get in front of him and you 
+                    see that his eyes are rolled back and seems to be suffering. You reachout to him but before you can touch him, Wandell's 
+                    hand grabs yours. His eyes have turned purple and he looks at you with an angry look. "You dare disturb your patron?" You look 
+                    confused. Wandell is young. He definitely isn't younger than you.
+                    <br/>
+                    <br/>
+                    "I am not Wandell...or Wandell isn't the one talking to you." You begin to wonder who is Wandell. "I can feel your thoughts.
+                    No. This is not my body. Your party seems to occasionally need my help. For some reason, you all are not smart enough to do what
+                    I need you to do. In time, I will need you to do my bidding. And When that time comes, I need you to complete my tasks withhout question."
+                    Before you can say anything back you are back in your bed. You seem to have slept alone. Normally this a sad thing, but with the company you 
+                    have kept recently, this is the first night you were not pegged by Xadalli nor had to sleep next to Olga. Maybe this was a good night...
+                </p>
+                
+
+            </section>
+
+            <section class="container" class="ans1" id="Nat20ans" style="display:none">
+                <p> 
+                    You walk into the room and you immediately can tell that the energy coming from Wandell is not Wandell. You immediately can
+                    tell that this is your Patron...
+                    <br/>
+                    <br/>                    
+                    "I am not Wandell...or Wandell isn't the one talking to you. I can feel your thoughts. I have taken your friends               
+                    body. It seems your party seems to occasionally needs my help. For some reason, you all are not smart enough to do what
+                    I need you to do. In time, I will need you to do my bidding. And When that time comes, I need you to complete my tasks withhout question.
+                    until that moment, lets keep this little encounter between ourselves..." Before you can say anything back you are back in your bed. You seem to have slept alone. Normally this a sad thing, but with the company you 
+                    have kept recently, this is the first night you were not pegged by Xadalli nor had to sleep next to Olga. Maybe this was a good night...
+                </p>
+
+        
+            </section>
+
+        </div>
+
+        <div>
+            <section class="container" id="bad-ending" style="display:none">
+                <p>
+                    You decide to go back to your room. Who cares what Wandell is doing. I go to bed with both Xadalli and Olga. You thought
+                    you were going to finally get a proper threesome. Instead Xadalli decides she still wants to peg you and you are forced to
+                    "take care" of Olga.
+                    <br/>
+                    <br/>
+                    You take 1d6 bludgeoning damage and 1d6 poisoning damage...
+                </p>
+            </section>
+        </div>
+
+            
     <script src="./script.js"></script>
 
     </body>
