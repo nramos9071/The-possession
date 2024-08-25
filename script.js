@@ -1,4 +1,4 @@
-let timeLeft = 1;
+let timeLeft = 6;
 
 
 
